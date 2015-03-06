@@ -17,7 +17,9 @@
 @fade-out: fade-out 0.7s both ease-out;
 @fade-in-r-slide: fade-in-r-slide 1s both ease-out;
 @fade-in-l-slide: fade-in-l-slide 0.5s both ease-out;
-html {}
+
+html {
+}
 
 body {
     white-space: nowrap;
@@ -36,8 +38,8 @@ header {
     background: @dark-gray;
     color: @white;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 999;
     width: 100%;
     overflow: hidden;
@@ -46,9 +48,11 @@ header {
     -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
     box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
     opacity: 0.95;
+
     nav {
         white-space: nowrap;
         font-size: 0;
+
         button {
             display: inline-block;
             vertical-align: top;
@@ -56,7 +60,7 @@ header {
             cursor: pointer;
             background: transparent;
             -moz-transition: background .3s ease-out, color .5s ease-out;
-            -moz-transition: background .3s ease-out, color .5s ease-out;
+            -o-transition: background .3s ease-out, color .5s ease-out;
             -webkit-transition: background .3s ease-out, color .5s ease-out;
             transition: background .3s ease-out, color .5s ease-out;
             height: 70px;
@@ -67,6 +71,7 @@ header {
             font-size: 20px;
             font-family: "Avenir Next";
             -webkit-font-smoothing: antialiased;
+
             &:hover {
                 background: @blue;
                 color: @white;
@@ -84,6 +89,7 @@ article {
     position: relative;
     white-space: normal;
     z-index: 100;
+
     &.section01 {
         height: 3000px;
         -moz-animation: @fade-in-r-slide;
@@ -156,6 +162,7 @@ a {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -165,6 +172,7 @@ a {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -174,6 +182,7 @@ a {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -183,6 +192,7 @@ a {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -192,6 +202,7 @@ a {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -201,6 +212,7 @@ a {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -215,12 +227,13 @@ a {
         transform: translateX(1300px);
         opacity: 0;
     }
+
     to {
-        -moz-transform: translateX(0px);
-        -ms-transform: translateX(0px);
-        -o-transform: translateX(0px);
-        -webkit-transform: translateX(0px);
-        transform: translateX(0px);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -233,6 +246,7 @@ a {
         -webkit-transform: translateX(0px);
         transform: translateX(0px);
     }
+
     to {
         -moz-transform: translateX(100%);
         -ms-transform: translateX(100%);
@@ -248,6 +262,7 @@ a {
         -moz-transform: translateX(1300px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateX(0px);
         opacity: 1;
@@ -259,6 +274,7 @@ a {
         -webkit-transform: translateX(1300px);
         opacity: 0;
     }
+
     to {
         -webkit-transform: translateX(0px);
         opacity: 1;
@@ -274,6 +290,7 @@ a {
         transform: translateX(-1500px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateX(0px);
         -ms-transform: translateX(0px);
@@ -293,6 +310,7 @@ a {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateX(0px);
         -ms-transform: translateX(0px);
@@ -308,6 +326,7 @@ a {
         -moz-transform: translateX(-1500px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateX(0px);
         opacity: 1;
@@ -319,6 +338,7 @@ a {
         -webkit-transform: translateX(-1500px);
         opacity: 0;
     }
+
     to {
         -webkit-transform: translateX(0px);
         opacity: 1;
@@ -334,6 +354,7 @@ a {
         transform: translateY(1000px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateY(0px);
         -ms-transform: translateY(0px);
@@ -349,6 +370,7 @@ a {
         -moz-transform: translateY(1000px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateY(0px);
         opacity: 1;
@@ -360,6 +382,7 @@ a {
         -webkit-transform: translateY(1000px);
         opacity: 0;
     }
+
     to {
         -webkit-transform: translateY(0px);
         opacity: 1;
@@ -375,6 +398,7 @@ a {
         transform: translateX(-500px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateX(0px);
         -ms-transform: translateX(0px);
@@ -390,6 +414,7 @@ a {
         -moz-transform: translateX(-500px);
         opacity: 0;
     }
+
     to {
         -moz-transform: translateX(0px);
         opacity: 1;
@@ -401,6 +426,7 @@ a {
         -webkit-transform: translateX(-500px);
         opacity: 0;
     }
+
     to {
         -webkit-transform: translateX(0px);
         opacity: 1;
@@ -416,6 +442,7 @@ a {
         transform: translateX(100px);
         opacity: 0;
     }
+
     50% {
         -moz-transform: translateX(0px);
         -ms-transform: translateX(0px);
@@ -424,6 +451,7 @@ a {
         transform: translateX(0px);
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
     }
@@ -434,10 +462,12 @@ a {
         -moz-transform: translateX(1000px);
         opacity: 0;
     }
+
     50% {
         -moz-transform: translateX(0px);
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
     }
@@ -448,10 +478,12 @@ a {
         -webkit-transform: translateX(1000px);
         opacity: 0;
     }
+
     50% {
         -webkit-transform: translateX(0px);
         opacity: 0.5;
     }
+
     100% {
         opacity: 1;
     }
@@ -466,9 +498,11 @@ a {
         transform: scale(0.1, 0.1);
         opacity: 0.0;
     }
+
     50% {
         opacity: 1.0;
     }
+
     100% {
         -moz-transform: scale(1.2, 1.2);
         -ms-transform: scale(1.2, 1.2);
@@ -484,9 +518,11 @@ a {
         -moz-transform: scale(0.1, 0.1);
         opacity: 0.0;
     }
+
     50% {
         opacity: 1.0;
     }
+
     100% {
         -moz-transform: scale(1.2, 1.2);
         opacity: 0.0;
@@ -498,9 +534,11 @@ a {
         -webkit-transform: scale(0.1, 0.1);
         opacity: 0.0;
     }
+
     50% {
         opacity: 1.0;
     }
+
     100% {
         -webkit-transform: scale(1.2, 1.2);
         opacity: 0.0;
