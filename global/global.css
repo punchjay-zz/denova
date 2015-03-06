@@ -44,12 +44,12 @@ header nav button {
   padding: 0;
   margin: 0;
   color: #d1bcd7;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Avenir Next";
   -webkit-font-smoothing: antialiased;
 }
 header nav button:hover {
-  background: #672079;
+  background: #00b294;
   color: #ffffff;
 }
 article {
