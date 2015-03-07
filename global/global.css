@@ -31,7 +31,7 @@ header {
   -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
   -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
   box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
-  opacity: 0.95;
+  opacity: 0.97;
 }
 header nav {
   white-space: nowrap;
@@ -62,16 +62,16 @@ header nav button:hover {
 }
 article {
   background: #2d2e34;
-  color: #bec4cc;
+  color: #ffffff;
   text-align: center;
   padding: 125px 0 250px;
   overflow: hidden;
   position: relative;
   white-space: normal;
   z-index: 100;
-  height: 400px;
 }
 article.section01 {
+  height: 400px;
   -moz-animation: fade-in-r-slide 1s both ease-out;
   -o-animation: fade-in-r-slide 1s both ease-out;
   -webkit-animation: fade-in-r-slide 1s both ease-out;
@@ -80,6 +80,14 @@ article.section01 {
   -o-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+}
+article.section02 {
+  background: #f2f3f6;
+  color: #2d2e34;
+  height: 350px;
+}
+article.section03 {
+  height: 350px;
 }
 h1,
 h2,
@@ -109,10 +117,10 @@ h4 {
 p {
   font-size: 18px;
   line-height: 30px;
-  color: #ffffff;
   margin: 0 auto;
   max-width: 600px;
   text-align: left;
+  padding: 0 0 30px 0;
 }
 p span,
 h1 span,
