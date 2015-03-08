@@ -55,6 +55,10 @@ header nav button {
   font-size: 20px;
   font-family: "Avenir Next", "nunitolight";
   -webkit-font-smoothing: antialiased;
+  -moz-animation: b-slide 0.5s both ease-out;
+  -o-animation: b-slide 0.5s both ease-out;
+  -webkit-animation: b-slide 0.5s both ease-out;
+  animation: b-slide 0.5s both ease-out;
 }
 header nav button:hover {
   background: #20bbfc;
@@ -313,7 +317,7 @@ a {
 }
 @-moz-keyframes b-slide {
   from {
-    -moz-transform: translateY(1000px);
+    -moz-transform: translateY(40px);
     opacity: 0;
   }
   to {
@@ -323,7 +327,7 @@ a {
 }
 @-webkit-keyframes b-slide {
   from {
-    -webkit-transform: translateY(1000px);
+    -webkit-transform: translateY(40px);
     opacity: 0;
   }
   to {
