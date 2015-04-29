@@ -67,6 +67,9 @@ header nav button.selected {
   background: #ffffff;
   color: #2d2e34;
 }
+*:focus {
+  outline: 0;
+}
 article {
   background: #2d2e34;
   color: #ffffff;

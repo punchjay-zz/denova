@@ -11,7 +11,7 @@ $(document).ready(function () {
         $(this).addClass('selected');
 
         requestAnimationFrame(function () {
-            $('body').animate({
+            $('html, body').animate({
                     scrollTop: $($btAnchor).offset().top
                 },
                 800);
