@@ -12,7 +12,6 @@ body {
   background-color: #2d2e34;
   font-family: "Avenir Next", "nunitolight";
   -webkit-font-smoothing: antialiased;
-  padding-top: 70px;
 }
 ::selection {
   color: #ffffff;
@@ -28,9 +27,6 @@ header {
   width: 100%;
   overflow: hidden;
   height: 70px;
-  -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
-  -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
-  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
   opacity: 0.96;
 }
 header nav {
@@ -59,16 +55,23 @@ header nav button {
   -o-animation: b-slide 0.5s both ease-out;
   -webkit-animation: b-slide 0.5s both ease-out;
   animation: b-slide 0.5s both ease-out;
+  -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
+  -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
 }
 header nav button:hover {
   background: #20bbfc;
   color: #ffffff;
 }
+header nav button.selected {
+  background: #ffffff;
+  color: #2d2e34;
+}
 article {
   background: #2d2e34;
   color: #ffffff;
   text-align: center;
-  padding: 125px 0 250px;
+  padding: 180px 0 250px;
   overflow: hidden;
   position: relative;
   white-space: normal;

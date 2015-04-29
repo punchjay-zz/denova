@@ -30,7 +30,6 @@ body {
     background-color: @dark-gray;
     font-family: "Avenir Next", "nunitolight";
     -webkit-font-smoothing: antialiased;
-    padding-top: 70px;
 }
 
 ::selection {
@@ -48,9 +47,6 @@ header {
     width: 100%;
     overflow: hidden;
     height: 70px;
-    -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
-    -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
-    box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
     opacity: 0.96;
     nav {
         white-space: nowrap;
@@ -77,9 +73,16 @@ header {
             -o-animation: @slide-bottom;
             -webkit-animation: @slide-bottom;
             animation: @slide-bottom;
+            -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
+            -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
+            box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 0 0 #000000, 0 0 0 #000000, 0 0 0 #000000;
             &:hover {
                 background: @blue-med;
                 color: @white;
+            }
+            &.selected {
+                background: @white;
+                color: @dark-gray;
             }
         }
     }
@@ -89,7 +92,7 @@ article {
     background: @dark-gray;
     color: @white;
     text-align: center;
-    padding: 125px 0 250px;
+    padding: 180px 0 250px;
     overflow: hidden;
     position: relative;
     white-space: normal;
