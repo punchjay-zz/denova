@@ -25,6 +25,11 @@
 @fade-out: fade-out 0.7s both ease-out;
 @fade-in-r-slide: fade-in-r-slide 1s both ease-out;
 @fade-in-l-slide: fade-in-l-slide 0.5s both ease-out;
+html {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
 body {
     white-space: nowrap;
     background-color: @dark-gray;
@@ -534,5 +539,14 @@ a {
     100% {
         -webkit-transform: scale(1.2, 1.2);
         opacity: 0.0;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    body {
+        font-size: 2em;
+    }
+    header {
+        display: none;
     }
 }

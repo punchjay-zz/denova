@@ -7,6 +7,10 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 body {
   white-space: nowrap;
   background-color: #2d2e34;
@@ -476,5 +480,13 @@ a {
   100% {
     -webkit-transform: scale(1.2, 1.2);
     opacity: 0.0;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    font-size: 2em;
+  }
+  header {
+    display: none;
   }
 }
