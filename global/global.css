@@ -86,14 +86,6 @@ article {
 }
 article.section01 {
   height: 400px;
-  -moz-animation: fade-in-r-slide 1s both ease-out;
-  -o-animation: fade-in-r-slide 1s both ease-out;
-  -webkit-animation: fade-in-r-slide 1s both ease-out;
-  animation: fade-in-r-slide 1s both ease-out;
-  -moz-animation-delay: 1s;
-  -o-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
 }
 article.section02 {
   background: #f2f3f6;
@@ -126,6 +118,16 @@ article.section03 {
   -o-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+}
+.fade-in {
+  -moz-animation: fade-in 0.7s both ease-out;
+  -o-animation: fade-in 0.7s both ease-out;
+  -webkit-animation: fade-in 0.7s both ease-out;
+  animation: fade-in 0.7s both ease-out;
+  -moz-animation-delay: 1.8s;
+  -o-animation-delay: 1.8s;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
 }
 h1,
 h2,
@@ -453,53 +455,6 @@ a {
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes pulsate {
-  0% {
-    -moz-transform: scale(0.1, 0.1);
-    -ms-transform: scale(0.1, 0.1);
-    -o-transform: scale(0.1, 0.1);
-    -webkit-transform: scale(0.1, 0.1);
-    transform: scale(0.1, 0.1);
-    opacity: 0.0;
-  }
-  50% {
-    opacity: 1.0;
-  }
-  100% {
-    -moz-transform: scale(1.2, 1.2);
-    -ms-transform: scale(1.2, 1.2);
-    -o-transform: scale(1.2, 1.2);
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-    opacity: 0.0;
-  }
-}
-@-moz-keyframes pulsate {
-  0% {
-    -moz-transform: scale(0.1, 0.1);
-    opacity: 0.0;
-  }
-  50% {
-    opacity: 1.0;
-  }
-  100% {
-    -moz-transform: scale(1.2, 1.2);
-    opacity: 0.0;
-  }
-}
-@-webkit-keyframes pulsate {
-  0% {
-    -webkit-transform: scale(0.1, 0.1);
-    opacity: 0.0;
-  }
-  50% {
-    opacity: 1.0;
-  }
-  100% {
-    -webkit-transform: scale(1.2, 1.2);
-    opacity: 0.0;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {

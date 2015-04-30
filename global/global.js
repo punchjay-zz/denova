@@ -31,19 +31,31 @@ $(document).ready(function () {
     $navBt.on('click', function () {
         var $this = $(this),
             $btAnchorId = $this.prop('id'),
-            $btAnchor = '#' + $btAnchorId + '-anchor';
+            btAnchor = '#' + $btAnchorId + '-anchor';
 
         $navBt.removeClass('selected');
         $(this).addClass('selected');
 
         requestAnimationFrame(function () {
             $('html, body').animate({
-                    scrollTop: $($btAnchor).offset().top
+                    scrollTop: $(btAnchor).offset().top
                 },
                 800);
         });
 
-        $($btAnchor).find('h1').addClass('slide-in-left');
-        $($btAnchor).find('p').addClass('slide-in-right');
+        $(btAnchor).find('h1').addClass('slide-in-left');
+        $(btAnchor).find('p').addClass('slide-in-right');
+        $(btAnchor).find('img').addClass('fade-in');
     });
+
+/*    $(window).scroll(function () {
+        var hT = $('#bt-two-anchor').offset().top,
+            hH = $('#bt-two-anchor').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        console.log((hT - wH), wS);
+        if (wS > (hT + hH - wH)) {
+            $('#bt-two-anchor').find('h1').addClass('slide-in-left');
+        }
+    });*/
 });

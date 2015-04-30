@@ -108,14 +108,6 @@ article {
     z-index: 100;
     &.section01 {
         height: 400px;
-        -moz-animation: @fade-in-r-slide;
-        -o-animation: @fade-in-r-slide;
-        -webkit-animation: @fade-in-r-slide;
-        animation: @fade-in-r-slide;
-        -moz-animation-delay: 1s;
-        -o-animation-delay: 1s;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
     }
     &.section02 {
         background: @off-white;
@@ -151,6 +143,17 @@ article {
     -o-animation-delay: 1s;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
+}
+
+.fade-in {
+    -moz-animation: @fade-in;
+    -o-animation: @fade-in;
+    -webkit-animation: @fade-in;
+    animation: @fade-in;
+    -moz-animation-delay: 1.8s;
+    -o-animation-delay: 1.8s;
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
 }
 
 h1,
@@ -511,56 +514,6 @@ a {
     }
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes pulsate {
-    0% {
-        -moz-transform: scale(0.1, 0.1);
-        -ms-transform: scale(0.1, 0.1);
-        -o-transform: scale(0.1, 0.1);
-        -webkit-transform: scale(0.1, 0.1);
-        transform: scale(0.1, 0.1);
-        opacity: 0.0;
-    }
-    50% {
-        opacity: 1.0;
-    }
-    100% {
-        -moz-transform: scale(1.2, 1.2);
-        -ms-transform: scale(1.2, 1.2);
-        -o-transform: scale(1.2, 1.2);
-        -webkit-transform: scale(1.2, 1.2);
-        transform: scale(1.2, 1.2);
-        opacity: 0.0;
-    }
-}
-
-@-moz-keyframes pulsate {
-    0% {
-        -moz-transform: scale(0.1, 0.1);
-        opacity: 0.0;
-    }
-    50% {
-        opacity: 1.0;
-    }
-    100% {
-        -moz-transform: scale(1.2, 1.2);
-        opacity: 0.0;
-    }
-}
-
-@-webkit-keyframes pulsate {
-    0% {
-        -webkit-transform: scale(0.1, 0.1);
-        opacity: 0.0;
-    }
-    50% {
-        opacity: 1.0;
-    }
-    100% {
-        -webkit-transform: scale(1.2, 1.2);
-        opacity: 0.0;
     }
 }
 
