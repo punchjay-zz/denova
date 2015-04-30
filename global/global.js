@@ -1,22 +1,5 @@
 /// <reference path="jquery-2.1.3.js" />
 $(document).ready(function () {
-    var $navBt = $('.nav-bt');
-
-    $navBt.on('click', function () {
-        var $this = $(this),
-            $btAnchorId = $this.prop('id'),
-            $btAnchor = '#' + $btAnchorId + '-anchor';
-
-        $navBt.removeClass('selected');
-        $(this).addClass('selected');
-
-        requestAnimationFrame(function () {
-            $('html, body').animate({
-                    scrollTop: $($btAnchor).offset().top
-                },
-                800);
-        });
-    });
 
     // MIT license - requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
     (function () {
@@ -42,4 +25,22 @@ $(document).ready(function () {
                 clearTimeout(id);
             };
     }());
+
+    var $navBt = $('.nav-bt');
+
+    $navBt.on('click', function () {
+        var $this = $(this),
+            $btAnchorId = $this.prop('id'),
+            $btAnchor = '#' + $btAnchorId + '-anchor';
+
+        $navBt.removeClass('selected');
+        $(this).addClass('selected');
+
+        requestAnimationFrame(function () {
+            $('html, body').animate({
+                    scrollTop: $($btAnchor).offset().top
+                },
+                800);
+        });
+    });
 });
