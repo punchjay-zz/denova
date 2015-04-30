@@ -42,5 +42,8 @@ $(document).ready(function () {
                 },
                 800);
         });
+
+        $($btAnchor).find('h1').addClass('slide-in-left');
+        $($btAnchor).find('p').addClass('slide-in-right');
     });
 });
