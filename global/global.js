@@ -34,7 +34,7 @@ $(document).ready(function () {
             btAnchor = '#' + $btAnchorId + '-anchor';
 
         $navBt.removeClass('selected');
-        $(this).addClass('selected');
+        $this.addClass('selected');
 
         requestAnimationFrame(function () {
             $('html, body').animate({
@@ -48,14 +48,14 @@ $(document).ready(function () {
         $(btAnchor).find('img').addClass('fade-in');
     });
 
-/*    $(window).scroll(function () {
-        var hT = $('#bt-two-anchor').offset().top,
-            hH = $('#bt-two-anchor').outerHeight(),
-            wH = $(window).height(),
-            wS = $(this).scrollTop();
-        console.log((hT - wH), wS);
-        if (wS > (hT + hH - wH)) {
-            $('#bt-two-anchor').find('h1').addClass('slide-in-left');
-        }
-    });*/
+    /*    $(window).scroll(function () {
+            var hT = $('#bt-two-anchor').offset().top,
+                hH = $('#bt-two-anchor').outerHeight(),
+                wH = $(window).height(),
+                wS = $(this).scrollTop();
+            console.log((hT - wH), wS);
+            if (wS > (hT + hH - wH)) {
+                $('#bt-two-anchor').find('h1').addClass('slide-in-left');
+            }
+        });*/
 });
