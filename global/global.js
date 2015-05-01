@@ -43,9 +43,9 @@ $(document).ready(function () {
                 800);
         });
 
-        $(btAnchor).find('h1').addClass('slide-in-left');
-        $(btAnchor).find('p').addClass('slide-in-right');
-        $(btAnchor).find('img').addClass('fade-in');
+        $(btAnchor).find('h1').addClass('slide-in-left').end()
+            .find('p').addClass('slide-in-right').end()
+            .find('img').addClass('fade-in');
     });
 
     /*    $(window).scroll(function () {
