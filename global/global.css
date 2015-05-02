@@ -16,6 +16,7 @@ body {
   background-color: #2d2e34;
   font-family: "Avenir Next", "nunitolight";
   -webkit-font-smoothing: antialiased;
+  font-size: 100%;
 }
 ::selection {
   color: #ffffff;
@@ -98,6 +99,12 @@ article.section02 img {
 }
 article.section03 {
   height: 350px;
+}
+footer p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -348,7 +355,7 @@ a {
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   body {
-    font-size: 2em;
+    font-size: 200%;
   }
   header {
     display: none;
