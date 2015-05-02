@@ -30,8 +30,8 @@ $(document).ready(function () {
 
     $navBt.on('click', function () {
         var $this = $(this),
-            $btAnchorId = $this.prop('id'),
-            btAnchor = '#' + $btAnchorId + '-anchor';
+            $thisId = $this.prop('id'),
+            btAnchor = '#' + $thisId + '-anchor';
 
         $navBt.removeClass('selected');
         $this.addClass('selected');
