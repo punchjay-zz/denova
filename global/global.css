@@ -85,6 +85,9 @@ article {
   white-space: normal;
   z-index: 100;
 }
+article .container {
+  padding: 0 40px 0 40px;
+}
 article.section01 {
   height: 400px;
 }
