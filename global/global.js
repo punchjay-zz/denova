@@ -25,6 +25,7 @@ $(document).ready(function () {
                 clearTimeout(id);
             };
     }());
+    //end polyfill
 
     var $navBt = $('.nav-bt');
 
