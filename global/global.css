@@ -13,7 +13,7 @@ html {
 }
 body {
   white-space: nowrap;
-  background-color: #2d2e34;
+  background-color: #2d2e35;
   font-family: "Avenir Next", "nunitolight";
   -webkit-font-smoothing: antialiased;
   font-size: 100%;
@@ -70,13 +70,13 @@ header nav button:hover {
 }
 header nav button.selected {
   background: #ffffff;
-  color: #2d2e34;
+  color: #2d2e35;
 }
 *:focus {
   outline: 0;
 }
 article {
-  background: #2d2e34;
+  background: #2d2e35;
   color: #ffffff;
   text-align: center;
   padding: 180px 0 250px;
@@ -93,7 +93,7 @@ article.section01 {
 }
 article.section02 {
   background: #f2f3f6;
-  color: #2d2e34;
+  color: #2d2e35;
   height: 350px;
 }
 article.section02 img {
