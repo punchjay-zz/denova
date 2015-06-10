@@ -79,7 +79,7 @@ article {
   background: #2d2e34;
   color: #ffffff;
   text-align: center;
-  padding: 180px 0 250px;
+  padding: 180px 0 200px;
   overflow: hidden;
   position: relative;
   white-space: normal;
@@ -94,11 +94,12 @@ article.section01 {
 article.section02 {
   background: #f2f3f6;
   color: #2d2e34;
-  height: 350px;
+  height: auto;
 }
 article.section02 img {
   display: inline-block;
-  padding: 10px 10px 0 10px;
+  margin: 10px 10px 0 0;
+  border: solid 4px #ffffff;
 }
 article.section03 {
   height: 350px;

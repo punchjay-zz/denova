@@ -14,8 +14,6 @@
 @blue-med: #20bbfc;
 @white: #fff;
 @black: #000;
-@purple-rain: #672079;
-@light-purple: #d1bcd7;
 @orange: #ff8c00;
 @dark-orange: #dc3c00;
 @slide-left: l-slide 0.5s both ease-out;
@@ -102,7 +100,7 @@ article {
     background: @dark-gray;
     color: @white;
     text-align: center;
-    padding: 180px 0 250px;
+    padding: 180px 0 200px;
     overflow: hidden;
     position: relative;
     white-space: normal;
@@ -116,10 +114,11 @@ article {
     &.section02 {
         background: @off-white;
         color: @dark-gray;
-        height: 350px;
+        height: auto;
         img {
             display: inline-block;
-            padding: 10px 10px 0 10px;
+            margin: 10px 10px 0 0;
+            border: solid 4px @white;
         }
     }
     &.section03 {
