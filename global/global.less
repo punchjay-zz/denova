@@ -9,7 +9,6 @@
 @import "reset.css";
 @dark-gray: #2d2e34;
 @light-gray: #bec4cc;
-@blue: #00B294;
 @off-white: #f2f3f6;
 @blue-med: #20bbfc;
 @white: #fff;
@@ -26,6 +25,7 @@
 html {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    font-size: 18px;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
     background-color: @dark-gray;
     font-family: "Avenir Next", "nunitolight";
     -webkit-font-smoothing: antialiased;
-    font-size: 100%;
+    font-size: 1rem;
 }
 
 ::selection {
@@ -70,7 +70,7 @@ header {
             padding: 0;
             margin: 0;
             color: @blue-med;
-            font-size: 20px;
+            font-size: 1.1rem;
             font-family: "Avenir Next", "nunitolight";
             -webkit-font-smoothing: antialiased;
             -moz-animation: @slide-bottom;
@@ -119,18 +119,12 @@ article {
             display: inline-block;
             margin: 10px 10px 0 0;
             border: solid 4px @white;
+            max-width: 100%;
         }
     }
     &.section03 {
         height: 350px;
     }
-}
-
-footer p {
-    text-align: center;
-    color: @white;
-    font-size: 14px;
-    margin: 0 auto;
 }
 
 h1,
@@ -143,30 +137,30 @@ h4 {
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 2.222rem;
+    line-height: 2.222rem;
     margin-top: 0;
     font-weight: 400;
 }
 
 h2 {
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 2.111rem;
+    line-height: 2.111rem;
 }
 
 h3 {
-    font-size: 29px;
-    line-height: 40px;
+    font-size: 1.556rem;
+    line-height: 1.667rem;
 }
 
 h4 {
-    font-size: 21px;
-    line-height: 24px;
+    font-size: 1.111rem;
+    line-height: 1.222rem;
 }
 
 p {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 1.667rem;
     margin: 0 auto;
     max-width: 670px;
     text-align: left;
@@ -184,9 +178,19 @@ h4 {
     }
 }
 
+footer {
+    padding: 0 40px 0 40px;
+    p {
+        text-align: center;
+        color: @white;
+        font-size: 0.7778rem;
+        margin: 0 auto;
+    }
+}
+
 a {
     color: @white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .slide-in-left {

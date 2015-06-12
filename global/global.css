@@ -10,13 +10,14 @@
 html {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  font-size: 18px;
 }
 body {
   white-space: nowrap;
   background-color: #2d2e34;
   font-family: "Avenir Next", "nunitolight";
   -webkit-font-smoothing: antialiased;
-  font-size: 100%;
+  font-size: 1rem;
 }
 ::selection {
   color: #ffffff;
@@ -53,7 +54,7 @@ header nav button {
   padding: 0;
   margin: 0;
   color: #20bbfc;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-family: "Avenir Next", "nunitolight";
   -webkit-font-smoothing: antialiased;
   -moz-animation: b-slide 0.5s both ease-out;
@@ -100,15 +101,10 @@ article.section02 img {
   display: inline-block;
   margin: 10px 10px 0 0;
   border: solid 4px #ffffff;
+  max-width: 100%;
 }
 article.section03 {
   height: 350px;
-}
-footer p {
-  text-align: center;
-  color: #ffffff;
-  font-size: 14px;
-  margin: 0 auto;
 }
 h1,
 h2,
@@ -119,26 +115,26 @@ h4 {
   padding: 0 0 30px 0;
 }
 h1 {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 2.222rem;
+  line-height: 2.222rem;
   margin-top: 0;
   font-weight: 400;
 }
 h2 {
-  font-size: 38px;
-  line-height: 38px;
+  font-size: 2.111rem;
+  line-height: 2.111rem;
 }
 h3 {
-  font-size: 29px;
-  line-height: 40px;
+  font-size: 1.556rem;
+  line-height: 1.667rem;
 }
 h4 {
-  font-size: 21px;
-  line-height: 24px;
+  font-size: 1.111rem;
+  line-height: 1.222rem;
 }
 p {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 1.667rem;
   margin: 0 auto;
   max-width: 670px;
   text-align: left;
@@ -152,9 +148,18 @@ h4 span {
   font-weight: bold;
   color: #20bbfc;
 }
+footer {
+  padding: 0 40px 0 40px;
+}
+footer p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.7778rem;
+  margin: 0 auto;
+}
 a {
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .slide-in-left {
   -moz-animation: fade-in-l-slide 0.5s both ease-out;
