@@ -363,9 +363,6 @@ a {
   html body article {
     padding: 50px 0 50px 0;
   }
-  html body footer p {
-    font-size: 12px;
-  }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   html {
@@ -374,9 +371,6 @@ a {
   }
   html body article {
     padding: 90px 0 50px 0;
-  }
-  html body footer p {
-    font-size: 12px;
   }
 }
 /*@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
