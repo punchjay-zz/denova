@@ -25,7 +25,6 @@
 html {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    font-size: 18px;
 }
 
 body {
@@ -50,7 +49,7 @@ header {
     z-index: 999;
     width: 100%;
     overflow: hidden;
-    height: 70px;
+    height: 60px;
     opacity: 0.96;
     nav {
         white-space: nowrap;
@@ -65,7 +64,7 @@ header {
             -o-transition: background .4s ease-out, color .8s ease-out;
             -webkit-transition: background .4s ease-out, color .8s ease-out;
             transition: background .4s ease-out, color .8s ease-out;
-            height: 70px;
+            height: 60px;
             width: 33.33%;
             padding: 0;
             margin: 0;
@@ -100,17 +99,16 @@ article {
     background: @dark-gray;
     color: @white;
     text-align: center;
-    padding: 180px 0 200px;
+    padding: 180px 0 125px;
     overflow: hidden;
     position: relative;
     white-space: normal;
     z-index: 100;
+    height: auto;
     .container {
         padding: 0 40px 0 40px;
     }
-    &.section01 {
-        height: 400px;
-    }
+    &.section01 {}
     &.section02 {
         background: @off-white;
         color: @dark-gray;
@@ -122,9 +120,7 @@ article {
             max-width: 100%;
         }
     }
-    &.section03 {
-        height: 350px;
-    }
+    &.section03 {}
 }
 
 h1,
@@ -412,14 +408,100 @@ a {
     }
 }
 
+//iPhone 4 and 4S
+//@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
+//
+//@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+//    body {
+//        header {
+//            display: none;
+//        }
+//        article {
+//            padding: 50px 0 50px 0;
+//        }
+//        footer {
+//            p {
+//                font-size: 10px;
+//            }
+//        }
+//    }
+//}
+//
+//@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+//
+////Phone 5 and 5S
+//@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+//
+//@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+//    body {
+//        header {
+//            display: none;
+//        }
+//        article {
+//            padding: 50px 0 50px 0;
+//        }
+//        footer {
+//            p {
+//                font-size: 10px;
+//            }
+//        }
+//    }
+//}
+//
+//@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+//iPhone 6
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    body {
-        font-size: 24px;
-        header {
-            display: none;
-        }
-        article {
-            padding: 50px 0 220px 0;
+    html {
+        body {
+            header {
+                display: none;
+            }
+            article {
+                padding: 50px 0 50px 0;
+            }
+            footer {
+                p {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    html {
+        font-size: 90%;
+        -webkit-text-size-adjust: none;
+        body {
+            article {
+                padding: 90px 0 50px 0;
+            }
+            footer {
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+//iPhone 6+
+/*@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    body {
+        header {
+            display: block;
+        }
+        article {
+            padding: 120px 0 50px 0;
+        }
+        footer {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}*/
