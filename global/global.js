@@ -1,6 +1,5 @@
 /// <reference path="jquery-2.1.3.js" />
 $(document).ready(function () {
-
     // MIT license - requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
     (function () {
         var lastTime = 0;
@@ -27,6 +26,7 @@ $(document).ready(function () {
     }());
     //end polyfill
 
+    //nav animations and scrolling
     var $navBt = $('.nav-bt');
 
     $navBt.on('click', function () {
