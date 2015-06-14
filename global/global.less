@@ -22,6 +22,12 @@
 @fade-out: fade-out 0.7s both ease-out;
 @fade-in-r-slide: fade-in-r-slide 1s both ease-out;
 @fade-in-l-slide: fade-in-l-slide 0.5s both ease-out;
+@iphone4-portrait: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)";
+@iphone4-landscape: ~"only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)";
+@iphone5-portrait: ~"only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)";
+@iphone5-landscape: ~"only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)";
+@iphone6-portrait: ~"only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)";
+@iphone6-landscape: ~"only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)";
 html {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -408,55 +414,15 @@ a {
     }
 }
 
-//iPhone 4 and 4S
-//@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
-//
-//@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-//    body {
-//        header {
-//            display: none;
-//        }
-//        article {
-//            padding: 50px 0 50px 0;
-//        }
-//        footer {
-//            p {
-//                font-size: 10px;
-//            }
-//        }
-//    }
-//}
-//
-//@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
-//
-////Phone 5 and 5S
-//@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
-//
-//@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-//    body {
-//        header {
-//            display: none;
-//        }
-//        article {
-//            padding: 50px 0 50px 0;
-//        }
-//        footer {
-//            p {
-//                font-size: 10px;
-//            }
-//        }
-//    }
-//}
-//
-//@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
-//iPhone 6
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media @iphone6-portrait,
+@iphone5-portrait,
+@iphone4-portrait {
     html {
         font-size: 97%;
         -webkit-text-size-adjust: none;
         body {
             header {
-                //                display: none;
+                display: none;
             }
             article {
                 padding: 80px 0 40px 0;
@@ -465,7 +431,9 @@ a {
     }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media @iphone6-landscape,
+@iphone5-portrait,
+@iphone4-portrait {
     html {
         font-size: 90%;
         -webkit-text-size-adjust: none;
@@ -476,24 +444,3 @@ a {
         }
     }
 }
-
-//iPhone 6+
-/*@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-    body {
-        header {
-            display: block;
-        }
-        article {
-            padding: 120px 0 50px 0;
-        }
-        footer {
-            p {
-                font-size: 12px;
-            }
-        }
-    }
-}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}*/
