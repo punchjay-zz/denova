@@ -10,6 +10,7 @@
 html {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  height: 100%;
 }
 body {
   white-space: nowrap;
@@ -368,6 +369,11 @@ a {
   html {
     font-size: 97% !important;
     -webkit-text-size-adjust: none;
+  }
+  html body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
   }
   html body header {
     display: none;
