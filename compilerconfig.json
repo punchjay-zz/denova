@@ -1,0 +1,12 @@
+﻿[
+  {
+    "outputFile": "global/global.css",
+    "inputFile": "global/global.less",
+    "minify": {
+      "enabled": true
+    },
+    "includeInProject": true,
+    "sourceMap": false,
+    "options": {}
+  }
+]
