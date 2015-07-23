@@ -193,6 +193,16 @@ a {
   -webkit-animation-delay: 1.8s;
   animation-delay: 1.8s;
 }
+.b-slide {
+  -moz-animation: b-slide 0.5s both ease-out;
+  -o-animation: b-slide 0.5s both ease-out;
+  -webkit-animation: b-slide 0.5s both ease-out;
+  animation: b-slide 0.5s both ease-out;
+  -moz-animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
 @keyframes fade-in {
   from {
     opacity: 0;
