@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "denova-home", "http://localhost:49279", "{F625898D-B703-4975-B76A-008ECCE04B66}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "denova-home", ".", "{1015B34F-17AB-4C57-ADB0-3D083EC5E040}"
 	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_49279"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\denova-home\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49279\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51662"
+		Debug.AspNetCompiler.PhysicalPath = "..\denova-home\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51662\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_49279"
-		Release.AspNetCompiler.PhysicalPath = "..\..\denova-home\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49279\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51662"
+		Release.AspNetCompiler.PhysicalPath = "..\denova-home\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51662\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "..\..\denova-home\"
+		VWDPort = "51662"
+		SlnRelativePath = "..\denova-home\"
 	EndProjectSection
 EndProject
 Global
@@ -29,8 +29,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F625898D-B703-4975-B76A-008ECCE04B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F625898D-B703-4975-B76A-008ECCE04B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1015B34F-17AB-4C57-ADB0-3D083EC5E040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1015B34F-17AB-4C57-ADB0-3D083EC5E040}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
