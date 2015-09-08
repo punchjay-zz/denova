@@ -1,3 +1,10 @@
-body {
+.page-container {
     display: none;
+}
+
+h1.ie-eight {
+  display: block;
+  text-align:center;
+  font-size:32px;
+  margin-top:150px;
 }

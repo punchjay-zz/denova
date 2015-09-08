@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -29,59 +29,63 @@
     <meta name="msapplication-TileImage" content="/media/favicon/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link href="global/global.css" rel="stylesheet" />
-    <!--[if lte IE 9]>
-      <link rel="stylesheet" type="text/css" href="ie.css">
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" type="text/css" href="global/ie.css">
     <![endif]-->
 </head>
 
 <body>
-    <header>
-        <nav>
-            <button id="bt-one" class="nav-bt selected">Denova</button>
-            <button id="bt-two" class="nav-bt">Examples</button>
-            <button id="bt-three" class="nav-bt">About Me</button>
-        </nav>
-    </header>
-    <article id="bt-one-anchor" class="section01">
-        <div class="container">
-            <h1 class="b-slide">Hello, I'm a...</h1>
-            <p class="slide-in-right">Front-End/UX Developer with eleven years of professional experience developing interactive web content, based in Seattle.</p>
-            <p class="slide-in-right">I've developed web based interactive training for Microsoft, Yahoo!, Amazon, J.Crew, Agilent Technologies, and Bechel. Closely collaborated with graphic designers and instructional designers.</p>
-            <img class="fade-in" src="media/gear.png" width="100" />
-        </div>
-    </article>
-    <article id="bt-two-anchor" class="section02">
-        <div class="container">
-            <h1>Work Examples</h1>
-            <p>Full portfolio available upon request (Confidentiality agreements... Man, you know how that goes).</p>
-            <div>
-                <img src="media/jcrew-ss.png" width="300" />
-                <img src="media/oem.png" width="300" />
-                <img src="media/yahoo01-ss.png" width="300" />
-                <img src="media/ion-ss.png" width="300" />
-                <img src="media/xbox-ss.png" width="300" />
-                <img src="media/yahoo02-ss.png" width="300" />
+    <div class="page-container">
+        <header>
+            <nav>
+                <button id="bt-one" class="nav-bt selected">Denova</button>
+                <button id="bt-two" class="nav-bt">Examples</button>
+                <button id="bt-three" class="nav-bt">About Me</button>
+            </nav>
+        </header>
+        <article id="bt-one-anchor" class="section01">
+            <div class="container">
+                <h1 class="b-slide">Hello, I'm a...</h1>
+                <p class="slide-in-right">Front-End/UX Developer with eleven years of professional experience developing interactive web content, based in Seattle.</p>
+                <p class="slide-in-right">I've developed web based interactive training for Microsoft, Yahoo!, Amazon, J.Crew, Agilent Technologies, and Bechel. Closely collaborated with graphic designers and instructional designers.</p>
+                <img class="fade-in" src="media/gear.png" width="100" />
             </div>
-        </div>
-    </article>
-    <article id="bt-three-anchor" class="section03">
-        <div class="container">
-            <h1>Skills and Techniques</h1>
-            <p>HTML5, CSS3, Responsive Design, jQuery, Javascript, Less, Video and Audio Editing, Photoshop, Illustrator, and IDEs such as Visual Studio for Windows and Brackets for Mac.</p>
-            <p>I can work closely with designers and back-end engineers, as a sole front-end or in Agile teams. I love using CSS for animations and interactions for modern web browsers.</p>
-            <img src="media/tool.png" width="100" />
-        </div>
-    </article>
-    <footer>
-        <div>
-            <p>&#169 2015 Denova | <a href="mailto:punchjay@gmail.com?Subject=Hello!" target="_top">punchjay@gmail.com</a>
-            </p>
-            <a href="https://instagram.com/punchjay" target="_blank"><img src="media/instagram-icon.png" width="25" />
-            </a>
-        </div>
-    </footer>
-    <script type="text/javascript" src="global/jquery-2.1.3.min.js"></script>
-    <script type="text/javascript" src="global/global.js"></script>
+        </article>
+        <article id="bt-two-anchor" class="section02">
+            <div class="container">
+                <h1>Work Examples</h1>
+                <p>Full portfolio available upon request (Confidentiality agreements... Man, you know how that goes).</p>
+                <div>
+                    <img src="media/jcrew-ss.png" width="300" />
+                    <img src="media/oem.png" width="300" />
+                    <img src="media/yahoo01-ss.png" width="300" />
+                    <img src="media/ion-ss.png" width="300" />
+                    <img src="media/xbox-ss.png" width="300" />
+                    <img src="media/yahoo02-ss.png" width="300" />
+                </div>
+            </div>
+        </article>
+        <article id="bt-three-anchor" class="section03">
+            <div class="container">
+                <h1>Skills and Techniques</h1>
+                <p>HTML5, CSS3, Responsive Design, jQuery, Javascript, Less, Video and Audio Editing, Photoshop, Illustrator, and IDEs such as Visual Studio for Windows and Brackets for Mac.</p>
+                <p>I can work closely with designers and back-end engineers, as a sole front-end or in Agile teams. I love using CSS for animations and interactions for modern web browsers.</p>
+                <img src="media/tool.png" width="100" />
+            </div>
+        </article>
+        <footer>
+            <div>
+                <p>
+                    &#169 2015 Denova | <a href="mailto:punchjay@gmail.com?Subject=Hello!" target="_top">punchjay@gmail.com</a>
+                </p>
+                <a href="https://instagram.com/punchjay" target="_blank">
+                    <img src="media/instagram-icon.png" width="25" />
+                </a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="global/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="global/global.js"></script>
+    </div>
+    <h1 class="ie-eight">Your browser is too damn old :)</h1>
 </body>
-
 </html>
