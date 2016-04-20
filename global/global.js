@@ -1,5 +1,5 @@
 /// <reference path="jquery-2.1.3.js" />
-$(function () {
+document.addEventListener("DOMContentLoaded", function () {
 
     // MIT license - requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
     (function () {
@@ -28,29 +28,42 @@ $(function () {
     //end polyfill
 
     //nav animations and scrolling
-    var $navBt = $('.nav-bt');
+    //var $navBt = $('.nav-bt');
+    var navBt = document.querySelectorAll('.nav-bt');
 
-    $navBt.on('click', function () {
-        var $this = $(this),
-            $thisId = $this.prop('id'),
-            btAnchor = '#' + $thisId + '-anchor';
+    for (var i = 0, len = navBt.length; i < len; i++) {
+        navBt[i].addEventListener('click', function () {
 
-        $navBt.removeClass('selected');
-        $this.addClass('selected');
+            var thisId = this.getAttribute('id'),
+                btAnchor = '#' + thisId + '-anchor';
 
-        requestAnimationFrame(function () {
-            $('html, body').animate({
-                    scrollTop: $(btAnchor).offset().top
-                },
-                800);
+            for (var i = 0, len = navBt.length; i < len; i++) {
+                navBt[i].classList.add('selected');
+            }
+            this.classList.remove('selected');
+            console.log(btAnchor);
+
+            //            var $this = $(this),
+            //                $thisId = $this.prop('id'),
+            //                btAnchor = '#' + $thisId + '-anchor';
+            //$navBt.removeClass('selected');
+            //            $this.addClass('selected');
+            //
+            requestAnimationFrame(function () {
+                $('html, body').animate({
+                        scrollTop: $(btAnchor).offset().top
+                    },
+                    800);
+            });
+            //
+            //            $(btAnchor).find('h1').addClass('slide-in-left').end()
+            //                .find('p').addClass('slide-in-right').end()
+            //                .find('img').addClass('fade-in');
+
+            return false;
         });
+    }
 
-        $(btAnchor).find('h1').addClass('slide-in-left').end()
-            .find('p').addClass('slide-in-right').end()
-            .find('img').addClass('fade-in');
-
-        return false;
-    });
 
     //google analytics
     (function (i, s, o, g, r, a, m) {
