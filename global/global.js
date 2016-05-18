@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     //end polyfill
 
     //nav animations and scrolling
-    //var $navBt = $('.nav-bt');
     var navBt = document.querySelectorAll('.nav-bt');
 
     for (var i = 0, len = navBt.length; i < len; i++) {
@@ -40,24 +39,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 navBt[i].classList.add('selected');
             }
             this.classList.remove('selected');
-            console.log(btAnchor);
+            //console.log(btAnchor);
 
-            //            var $this = $(this),
-            //                $thisId = $this.prop('id'),
-            //                btAnchor = '#' + $thisId + '-anchor';
-            //$navBt.removeClass('selected');
-            //            $this.addClass('selected');
-            //
-            requestAnimationFrame(function () {
+            var sectHead = document.querySelector(btAnchor).querySelector('h1');
+            var sectP = document.querySelector(btAnchor).querySelector('p');
+            var sectImg = document.querySelector(btAnchor).querySelector('img');
+
+            console.log(btAnchor,sectHead, sectP, sectImg);
+            sectHead.classList.add('slide-in-left');
+            sectP.classList.add('slide-in-right');
+            sectImg.classList.add('fade-in');
+
+           /*requestAnimationFrame(function () {
                 $('html, body').animate({
                         scrollTop: $(btAnchor).offset().top
                     },
                     800);
-            });
-            //
-            //            $(btAnchor).find('h1').addClass('slide-in-left').end()
-            //                .find('p').addClass('slide-in-right').end()
-            //                .find('img').addClass('fade-in');
+            });*/
 
             return false;
         });
