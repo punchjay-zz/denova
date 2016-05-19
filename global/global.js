@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }());
     //end polyfill
 
-    //nav animations and scrolling
+    //nav animations and scrolling in vanilla javascript
+    //same functionality as below
     var navBt = document.querySelectorAll('.nav-bt');
 
     for (var i = 0, len = navBt.length; i < len; i++) {
@@ -68,6 +69,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    //nav animations and scrolling in jquery
+    //same functionality as above
+   /*var $navBt = $('.nav-bt');
+
+    $navBt.on('click', function () {
+        var $this = $(this),
+            $thisId = $this.prop('id'),
+            btAnchor = '#' + $thisId + '-anchor';
+
+        $navBt.removeClass('selected');
+        $this.addClass('selected');
+
+        requestAnimationFrame(function () {
+            $('html, body').animate({
+                scrollTop: $(btAnchor).offset().top
+            },
+                800);
+        });
+
+        $(btAnchor).find('h1').addClass('slide-in-left').end()
+            .find('p').addClass('slide-in-right').end()
+            .find('img').addClass('fade-in');
+
+        return false;
+    });*/
 
     //google analytics
     (function (i, s, o, g, r, a, m) {
