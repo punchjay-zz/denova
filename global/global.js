@@ -38,24 +38,31 @@ document.addEventListener("DOMContentLoaded", function () {
             for (var i = 0, len = navBt.length; i < len; i++) {
                 navBt[i].classList.add('selected');
             }
+
             this.classList.remove('selected');
-            //console.log(btAnchor);
 
-            var sectHead = document.querySelector(btAnchor).querySelector('h1');
-            var sectP = document.querySelector(btAnchor).querySelector('p');
-            var sectImg = document.querySelector(btAnchor).querySelector('img');
+            var sectHead = document.querySelector(btAnchor).querySelector('h1'),
+            sectP = document.querySelector(btAnchor).querySelectorAll('p'),
+            sectImg = document.querySelector(btAnchor).querySelectorAll('img');
 
-            console.log(btAnchor,sectHead, sectP, sectImg);
+            console.log(btAnchor, sectHead, sectP, sectImg);
+
             sectHead.classList.add('slide-in-left');
-            sectP.classList.add('slide-in-right');
-            sectImg.classList.add('fade-in');
 
-           /*requestAnimationFrame(function () {
-                $('html, body').animate({
+            for (var i = 0; i < sectP.length; i++) {
+                sectP[i].classList.add('slide-in-right');
+            }
+
+            for (var i = 0; i < sectImg.length; i++) {
+                sectImg[i].classList.add('fade-in');
+            }
+           
+            requestAnimationFrame(function () {
+                /*$('html, body').animate({
                         scrollTop: $(btAnchor).offset().top
                     },
-                    800);
-            });*/
+                    800);*/
+            });
 
             return false;
         });
