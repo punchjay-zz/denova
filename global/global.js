@@ -59,10 +59,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
            
             requestAnimationFrame(function () {
-                /*$('html, body').animate({
+                $('html, body').animate({
                         scrollTop: $(btAnchor).offset().top
                     },
-                    800);*/
+                    800);
             });
 
             return false;
