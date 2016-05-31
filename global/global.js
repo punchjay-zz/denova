@@ -1,6 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-
-    // MIT license - requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
+/// <reference path="jquery-2.1.3.js" />
+$(function () {
+    'use strict';
+    
+    // MIT license - requestAnimationFrame polyfill by Erik MÃ¶ller. fixes from Paul Irish and Tino Zijdel
     (function () {
         var lastTime = 0;
         var vendors = ['ms', 'moz', 'webkit', 'o'];
@@ -13,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 var currTime = new Date().getTime();
                 var timeToCall = Math.max(0, 16 - (currTime - lastTime));
                 var id = window.setTimeout(function () {
-                        callback(currTime + timeToCall);
-                    },
+                    callback(currTime + timeToCall);
+                },
                     timeToCall);
                 lastTime = currTime + timeToCall;
                 return id;
@@ -26,52 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }());
     //end polyfill
 
-    //nav animations and scrolling in vanilla javascript
-    //same functionality as below
-    var navBt = document.querySelectorAll('.nav-bt');
-
-    for (var i = 0, len = navBt.length; i < len; i++) {
-        navBt[i].addEventListener('click', function () {
-
-            var thisId = this.getAttribute('id'),
-                btAnchor = '#' + thisId + '-anchor';
-
-            for (var i = 0, len = navBt.length; i < len; i++) {
-                navBt[i].classList.add('selected');
-            }
-
-            this.classList.remove('selected');
-
-            var sectHead = document.querySelector(btAnchor).querySelector('h1'),
-            sectP = document.querySelector(btAnchor).querySelectorAll('p'),
-            sectImg = document.querySelector(btAnchor).querySelectorAll('img');
-
-            console.log(btAnchor, sectHead, sectP, sectImg);
-
-            sectHead.classList.add('slide-in-left');
-
-            for (var i = 0; i < sectP.length; i++) {
-                sectP[i].classList.add('slide-in-right');
-            }
-
-            for (var i = 0; i < sectImg.length; i++) {
-                sectImg[i].classList.add('fade-in');
-            }
-           
-            requestAnimationFrame(function () {
-                /*$('html, body').animate({
-                        scrollTop: $(btAnchor).offset().top
-                    },
-                    800);*/
-            });
-
-            return false;
-        });
-    }
-
-    //nav animations and scrolling in jquery
-    //same functionality as above
-   /*var $navBt = $('.nav-bt');
+    //nav animations and scrolling
+    var $navBt = $('.nav-bt');
 
     $navBt.on('click', function () {
         var $this = $(this),
@@ -93,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .find('img').addClass('fade-in');
 
         return false;
-    });*/
+    });
 
     //google analytics
     (function (i, s, o, g, r, a, m) {
