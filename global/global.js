@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     'use strict';
 
     // MIT license - requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
@@ -14,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 var currTime = new Date().getTime();
                 var timeToCall = Math.max(0, 16 - (currTime - lastTime));
                 var id = window.setTimeout(function () {
-                        callback(currTime + timeToCall);
-                    },
+                    callback(currTime + timeToCall);
+                },
                     timeToCall);
                 lastTime = currTime + timeToCall;
                 return id;
@@ -58,11 +59,11 @@ document.addEventListener('DOMContentLoaded', function () {
             for (var i = 0; i < sectImg.length; i++) {
                 sectImg[i].classList.add('fade-in');
             }
-           
+
             requestAnimationFrame(function () {
                 $('html, body').animate({
-                        scrollTop: $(btAnchor).offset().top
-                    },
+                    scrollTop: $(btAnchor).offset().top
+                },
                     800);
             });
 
@@ -72,29 +73,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //nav animations and scrolling in jquery
     //same functionality as above
-   /*var $navBt = $('.nav-bt');
-
-    $navBt.on('click', function () {
-        var $this = $(this),
-            $thisId = $this.prop('id'),
-            btAnchor = '#' + $thisId + '-anchor';
-
-        $navBt.removeClass('selected');
-        $this.addClass('selected');
-
-        requestAnimationFrame(function () {
-            $('html, body').animate({
-                scrollTop: $(btAnchor).offset().top
-            },
-                800);
-        });
-
-        $(btAnchor).find('h1').addClass('slide-in-left').end()
-            .find('p').addClass('slide-in-right').end()
-            .find('img').addClass('fade-in');
-
-        return false;
-    });*/
+    /*var $navBt = $('.nav-bt');
+ 
+     $navBt.on('click', function () {
+         var $this = $(this),
+             $thisId = $this.prop('id'),
+             btAnchor = '#' + $thisId + '-anchor';
+ 
+         $navBt.removeClass('selected');
+         $this.addClass('selected');
+ 
+         requestAnimationFrame(function () {
+             $('html, body').animate({
+                 scrollTop: $(btAnchor).offset().top
+             },
+                 800);
+         });
+ 
+         $(btAnchor).find('h1').addClass('slide-in-left').end()
+             .find('p').addClass('slide-in-right').end()
+             .find('img').addClass('fade-in');
+ 
+         return false;
+     });*/
 
     //google analytics
     (function (i, s, o, g, r, a, m) {
