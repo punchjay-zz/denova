@@ -1,5 +1,6 @@
 /// <reference path="jquery-2.1.3.js" />
 $(function () {
+    
     'use strict';
     
     // MIT license - requestAnimationFrame polyfill by Erik MÃ¶ller. fixes from Paul Irish and Tino Zijdel
