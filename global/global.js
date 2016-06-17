@@ -2,7 +2,7 @@
 $(function () {
     
     'use strict';
-    
+
     // MIT license - requestAnimationFrame polyfill by Erik MÃ¶ller. fixes from Paul Irish and Tino Zijdel
     (function () {
         var lastTime = 0;
@@ -34,8 +34,8 @@ $(function () {
 
     $navBt.on('click', function () {
         var $this = $(this),
-            $thisId = $this.prop('id'),
-            btAnchor = '#' + $thisId + '-anchor';
+            thisId = $this.prop('id'),
+            $btAnchor = $('#' + thisId + '-anchor');
 
         $navBt.removeClass('selected');
         $this.addClass('selected');
@@ -47,9 +47,9 @@ $(function () {
                 800);
         });
 
-        $(btAnchor).find('h1').addClass('slide-in-left').end()
-            .find('p').addClass('slide-in-right').end()
-            .find('img').addClass('fade-in');
+        $btAnchor.find('h1').addClass('slide-in-left').end()
+                .find('p').addClass('slide-in-right').end()
+                .find('img').addClass('fade-in');
 
         return false;
     });
