@@ -97,6 +97,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return false;
     });*/
 
+    var currentDate = new Date();
+    var yearDate = currentDate.getFullYear();
+    document.getElementById('year-date').innerHTML = yearDate;
+
     //google analytics
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
