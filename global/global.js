@@ -1,6 +1,6 @@
 /// <reference path="jquery-2.1.3.js" />
 $(function () {
-    
+
     'use strict';
 
     // MIT license - requestAnimationFrame polyfill by Erik MÃ¶ller. fixes from Paul Irish and Tino Zijdel
@@ -53,6 +53,10 @@ $(function () {
 
         return false;
     });
+
+    var currentDate = new Date();
+    var yearDate = currentDate.getFullYear();
+    document.getElementById('year-date').innerHTML = yearDate;
 
     //google analytics
     (function (i, s, o, g, r, a, m) {
