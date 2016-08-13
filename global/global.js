@@ -42,7 +42,7 @@ $(function () {
 
         requestAnimationFrame(function () {
             $('html, body').animate({
-                scrollTop: $(btAnchor).offset().top
+                scrollTop: $($btAnchor).offset().top
             },
                 800);
         });
