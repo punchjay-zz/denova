@@ -1,4 +1,4 @@
-@import "reset.css";
+﻿@import "reset.css";
 @font-face {
   font-family: 'nunitolight';
   src: url('fonts/Nunito-Light-webfont.eot');
@@ -147,7 +147,7 @@ footer {
 }
 footer img {
   display: inline-block;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 6px;
   vertical-align: middle;
   max-width: 100%;
 }
