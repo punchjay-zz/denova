@@ -52,13 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             sectHead.classList.add('slide-in-left');
 
-            for (var i = 0; i < sectP.length; i++) {
-                sectP[i].classList.add('slide-in-right');
-            }
+            sectP.forEach((element, index) => {
+                element.classList.add('slide-in-right');
+            });
 
-            for (var i = 0; i < sectImg.length; i++) {
-                sectImg[i].classList.add('fade-in');
-            }
+            sectImg.forEach((element, index) => {
+                element.classList.add('fade-in');
+            });
 
             requestAnimationFrame(function () {
                 $('html, body').animate({
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         requestAnimationFrame(function () {
             $('html, body').animate({
-                scrollTop: $(btAnchor).offset().top
+                scrollTop: $($btAnchor).offset().top
             },
                 800);
         });
