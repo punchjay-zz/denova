@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "Launch index.html with sourcemaps",
             "type": "chrome",
@@ -13,7 +14,7 @@
             "name": "Launch localhost with sourcemaps",
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost:8080",
+            "url": "http://localhost:8080/index.htm",
             "sourceMaps": true,
             "webRoot": "${workspaceRoot}"
         },
