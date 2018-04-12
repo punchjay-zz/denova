@@ -1,4 +1,4 @@
-﻿@import "reset.css";
+@import "reset.css";
 @font-face {
   font-family: 'nunitolight';
   src: url('fonts/Nunito-Light-webfont.eot');
@@ -201,6 +201,9 @@ a {
   -o-animation-delay: 0.8s;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
+}
+.image-container {
+  display: none;
 }
 @keyframes fade-in {
   from {
