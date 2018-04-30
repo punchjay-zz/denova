@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 var currTime = new Date().getTime();
                 var timeToCall = Math.max(0, 16 - (currTime - lastTime));
                 var id = window.setTimeout(function () {
-                    callback(currTime + timeToCall);
-                },
+                        callback(currTime + timeToCall);
+                    },
                     timeToCall);
                 lastTime = currTime + timeToCall;
                 return id;
@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', function () {
             this.classList.remove('selected');
 
             var sectHead = document.querySelector(btAnchor).querySelector('h1'),
-            sectP = document.querySelector(btAnchor).querySelectorAll('p'),
-            sectImg = document.querySelector(btAnchor).querySelectorAll('img');
+                sectP = document.querySelector(btAnchor).querySelectorAll('p'),
+                sectImg = document.querySelector(btAnchor).querySelectorAll('img');
 
-            console.log(btAnchor, sectHead, sectP, sectImg);
+            //console.log(btAnchor, sectHead, sectP, sectImg);
 
             sectHead.classList.add('slide-in-left');
 
@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             requestAnimationFrame(function () {
                 $('html, body').animate({
-                    scrollTop: $(btAnchor).offset().top
-                },
+                        scrollTop: $(btAnchor).offset().top
+                    },
                     800);
             });
 

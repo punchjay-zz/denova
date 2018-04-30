@@ -162,6 +162,13 @@ a {
   color: #fff;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
+#year-date {
+  color: #fff;
+  font-weight: normal;
+}
 .slide-in-left {
   -moz-animation: fade-in-l-slide 0.5s both ease-out;
   -o-animation: fade-in-l-slide 0.5s both ease-out;
