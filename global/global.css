@@ -1,4 +1,4 @@
-﻿@import "reset.css";
+@import 'reset.css';
 @font-face {
   font-family: 'nunitolight';
   src: url('fonts/Nunito-Light-webfont.eot');
@@ -13,7 +13,7 @@ html {
 body {
   white-space: nowrap;
   background-color: #2d2e34;
-  font-family: "Avenir Next", "nunitolight";
+  font-family: 'Avenir Next', 'nunitolight';
   -webkit-font-smoothing: antialiased;
   font-size: 1rem;
 }
@@ -53,7 +53,7 @@ header nav button {
   margin: 0;
   color: #20bbfc;
   font-size: 1.1rem;
-  font-family: "Avenir Next", "nunitolight";
+  font-family: 'Avenir Next', 'nunitolight';
   -webkit-font-smoothing: antialiased;
   -moz-animation: b-slide 0.5s both ease-out;
   -o-animation: b-slide 0.5s both ease-out;
@@ -157,6 +157,10 @@ footer p {
   color: #fff;
   font-size: 0.7778rem;
   margin: 0 auto;
+}
+footer #year-date {
+  font-weight: normal;
+  color: #f2f3f6;
 }
 a {
   color: #fff;
